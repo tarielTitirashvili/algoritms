@@ -1,5 +1,6 @@
   const arr = [9, 8, 7, 6, 5, 4, 3, 2, 1];
 
+  // best sort
   function sort(array) {
     for (let k = 0; k < array.length - 1; k++) {
       for (let i = 0; i < array.length - 1; i++) {
