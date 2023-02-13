@@ -6,10 +6,6 @@ function binarySearch(sortedArray, target) {
   
   while (first <= last) {
     const mid = Math.floor((first + last) / 2)
-    console.log(mid, 'mid')
-    console.log(first, 'first')
-    console.log(last, 'last')
-
     if(sortedArray[mid] === target){
       return mid
     }else if(sortedArray[mid] < target){
@@ -18,6 +14,7 @@ function binarySearch(sortedArray, target) {
       last = mid - 1
     }
   }
+  return -1
 }
 
 
