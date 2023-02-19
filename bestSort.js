@@ -1,4 +1,4 @@
-  const arr = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+const { unsortedArr } = require('./utils/constants')
 
   // best sort
   function sort(array) {
@@ -14,4 +14,4 @@
     }
     return array;
   }
-  console.log(sort(arr));
+  console.log(sort(unsortedArr));
