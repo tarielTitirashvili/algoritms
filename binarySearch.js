@@ -1,4 +1,4 @@
-const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+const unsortedArrays = require('./utils/constants')
 
 function binarySearch(sortedArray, target) {
   let first = 0
@@ -18,4 +18,4 @@ function binarySearch(sortedArray, target) {
 }
 
 
-console.log(binarySearch(arr, 8))
+console.log(binarySearch(unsortedArrays.unsortedArr, 8))

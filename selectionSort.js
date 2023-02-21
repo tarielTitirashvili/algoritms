@@ -1,4 +1,4 @@
-const { unsortedArr } = require('./utils/constants')
+const unsortedArrays = require('./utils/constants')
 
 const selectionSort = (arr) => {
     let unsorted = [...arr]
@@ -19,4 +19,4 @@ const selectionSort = (arr) => {
     return sorted
 }
 
-console.log(selectionSort(unsortedArr))
+console.log(selectionSort(unsortedArrays.unsortedArr))

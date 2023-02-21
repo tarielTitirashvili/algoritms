@@ -1,7 +1,7 @@
-const { unsortedArr } = require('./utils/constants')
+const unsortedArrays = require('./utils/constants')
 
   // best sort
-  function sort(array) {
+  function bubbleSort(array) {
     for (let k = 0; k < array.length - 1; k++) {
       for (let i = 0; i < array.length - 1; i++) {
         if (array[i] > array[i + 1]) {
@@ -14,4 +14,4 @@ const { unsortedArr } = require('./utils/constants')
     }
     return array;
   }
-  console.log(sort(unsortedArr));
+  console.log(sort(unsortedArrays.unsortedArr));
