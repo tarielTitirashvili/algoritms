@@ -6,7 +6,7 @@ const unsortedArrays = require('./utils/constants')
 
 
 function quickSort(array) {
-  if(array.length === 1)
+  if(array.length <= 1)
     return array
 
   let pivot = array[array.length-1]
@@ -19,13 +19,7 @@ function quickSort(array) {
       more.push(array[i]);
     }
   }
-  if(less.length>0 && more.length>0){
-    return [...quickSort(less), pivot, ...quickSort(more)]
-  }else if(less.length > 0){
-    return [...quickSort(less), pivot]
-  }else{
-    return [pivot, ...quickSort(more)]
-  }
+  return [...quickSort(less), pivot, ...quickSort(more)]
 }
 
 console.log(quickSort(unsortedArrays.unsortedArr))
