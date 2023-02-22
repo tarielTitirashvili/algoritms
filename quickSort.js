@@ -21,6 +21,5 @@ function quickSort(array) {
   }
   return [...quickSort(less), pivot, ...quickSort(more)]
 }
-
 console.log(quickSort(unsortedArrays.unsortedArr))
 console.log(quickSort(unsortedArrays.unsortedArr2))

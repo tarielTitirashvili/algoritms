@@ -1,3 +1,7 @@
+// 1. select first element as minimum value
+// 2. replace minimum value if find other smaller element while iterating
+// 3. push minimum value to new array after iterating finished
+
 const unsortedArrays = require('./utils/constants')
 
 const selectionSort = (arr) => {

@@ -1,6 +1,8 @@
+// compare all elements to each other 
+// if left one is bigger move it right and left one move left
+
 const unsortedArrays = require('./utils/constants')
 
-  // best sort
   function bubbleSort(array) {
     for (let k = 0; k < array.length - 1; k++) {
       for (let i = 0; i < array.length - 1; i++) {
@@ -14,4 +16,5 @@ const unsortedArrays = require('./utils/constants')
     }
     return array;
   }
-  console.log(sort(unsortedArrays.unsortedArr));
+
+  console.log(bubbleSort(unsortedArrays.unsortedArr));

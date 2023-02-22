@@ -1,3 +1,7 @@
+// best search algorithm during every iteration it will exclude half of the array elements
+// 1.it will check element in the middle 
+// 2.if it will lass then target all elements on right of the middle will be excluded and repeat this logic
+
 const unsortedArrays = require('./utils/constants')
 
 function binarySearch(sortedArray, target) {
