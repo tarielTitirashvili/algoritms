@@ -6,21 +6,17 @@ function mergeSortedArrays(left, right) {
   let leftIndex = 0
   let rightIndex = 0
   while (leftIndex<left.length || rightIndex < right.length) {
-    if(right.length===0 && left.length!==0) {
-      return left
+    if(left.length===0 && right.length!==0) {
+      return right
     }else if(right[rightIndex]===undefined && leftIndex<left.length){
       array.push(left[leftIndex])
       leftIndex++
     }else if(left[leftIndex]<right[rightIndex]){
-      if(left[leftIndex]){
-        array.push(left[leftIndex])
-        leftIndex++
-      }
+      array.push(left[leftIndex])
+      leftIndex++
     }else if(left[leftIndex]>right[rightIndex]){
-      if(right[rightIndex]!==undefined){
-        array.push(right[rightIndex])
-        rightIndex++
-      }
+      array.push(right[rightIndex])
+      rightIndex++
     }else{
       array.push(right[rightIndex])
       rightIndex++
@@ -42,9 +38,10 @@ function mergeSort(array) {
 }
 
 
-// console.log(arrays.unsortedArr)
+console.log(arrays.unsortedArr)
 console.log(mergeSort(arrays.unsortedArr))
-// console.log(arrays.unsortedArr2)
+console.log(arrays.unsortedArr2)
 console.log(mergeSort(arrays.unsortedArr2))
-// console.log(arrays.unsortedArr3)
+console.log(arrays.unsortedArr3)
 console.log(mergeSort(arrays.unsortedArr3))
+console.log(mergeSort(arrays.unsortedArr4))
