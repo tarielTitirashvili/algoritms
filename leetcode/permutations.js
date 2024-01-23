@@ -1,6 +1,5 @@
 //47. permutation leetcode task
 
-
 var permute = function (nums) {
   const results = []
   const finder = (arr, res = []) => {
