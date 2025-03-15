@@ -1,17 +1,26 @@
+// var curry = (fn) => {
+//   let allArgs = []
+//   return function curried(...args) {
+//     allArgs = [...allArgs, ...args]
+//     if (allArgs.length === fn.length) {
+//       const result = fn(...allArgs)
+//       allArgs = []
+//       return result
+//     } else
+//       return curried
+//   }
+// }
+
 var curry = (fn) => {
-  let allArgs = []
   return function curried(...args) {
-    if(args.length + allArgs.length < fn.length){
-      allArgs = [...allArgs, ...args]
-      return curried
-    }else if(args.length + allArgs.length === fn.length){
-      const copyArgs = [...allArgs, ...args]
-      allArgs = []
-      return fn(...copyArgs)
-    }
+    if(args.length === fn.length){
+      return fn(...args)
+    }else
+      return function (...newArgs) {
+        return curried(...args, ...newArgs)
+      }
   }
 }
-
 
 function sum(a, b, c) {
   return a + b + c
