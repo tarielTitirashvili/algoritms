@@ -27,4 +27,4 @@ function findDistance(targetX, targetY) {
   return layerNumber
 }
 
-console.log(findDistance(-2, -2))
+console.log(findDistance(-15, -15))
